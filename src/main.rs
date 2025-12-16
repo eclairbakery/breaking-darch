@@ -229,7 +229,7 @@ fn main() {
         run("/usr/bin/yay", &[]);
     }
     if cfg.packages.as_ref().map_or(false, |p| p.contains(&"paru".to_string())) {
-        print_warning("We strongly recommend you to use yay instead of paru.");
+        print_warning("We strongly recommend you to use yay instead of paru.", None);
         run("/usr/bin/paru", &[]);
     }
 
