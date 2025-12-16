@@ -5,5 +5,9 @@ Darch is a small tool allowing you to declarativelly install packages on Arch-ba
 - 🔙 saves the old configuration on success in case something goes wrong
 - 🤖 does all the initial setup for you, merging the configuration you've already done into /etc/sysconfig
 
+<div align="center">
+  <img width="728" height="412" alt="image" src="https://github.com/user-attachments/assets/9a720d6e-ce7b-4491-9d2e-8cdbb018ad2a" />
+</div>
+
 ## Configuration
 Configuration is a JSON file located at `/etc/sysconfig` (back-up configuration at `/etc/sysconfig.old`). If it does not exist, it's generated automatically using output from `pacman -Qe` and your configuration files.
