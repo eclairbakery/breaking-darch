@@ -1,5 +1,5 @@
 # darch 
-Darch is a small tool allowing you to declarativelly install packages on Arch-based distributions.
+Darch is a small tool allowing you to declarativelly install packages on Arch-based distributions. The goal is to make a full system configuration with includes, that will allow you to change everything through one organised file.
 
 - 🚀 automatically upgrades the system: pacman, flatpak and AUR (if AUR helper exists)
 - 🔙 saves the old configuration on success in case something goes wrong
