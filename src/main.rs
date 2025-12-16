@@ -225,6 +225,13 @@ fn main() {
     if cfg.packages.as_ref().map_or(false, |p| p.contains(&"flatpak".to_string())) {
         run("/usr/bin/flatpak", &["update"]);
     }
+    if cfg.packages.as_ref().map_or(false, |p| p.contains(&"yay".to_string())) {
+        run("/usr/bin/yay");
+    }
+    if cfg.packages.as_ref().map_or(false, |p| p.contains(&"paru".to_string())) {
+        print_warning("We strongly recommend you to use yay instead of paru.");
+        run("/usr/bin/paru");
+    }
 
     print_header("Processing package changes");
     if !add.is_empty() && !install_if_missing(&add) {
